@@ -10,7 +10,7 @@
 	"vagrant_box_name": "trusty64",
 	"role_hosts": "all", 
 	"role_use_sudo": true,
-    "release_date": "2014-07-07", 
+	"release_date": "2014-07-07", 
 	"year": "2014", 
 	"version" : "0.1.0"
 }
