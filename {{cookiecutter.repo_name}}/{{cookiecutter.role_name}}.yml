@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  sudo: {{cookiecutter.role_use_sudo}}
+  roles: 
+    - {{cookiecutter.repo_name}}

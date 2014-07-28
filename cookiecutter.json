@@ -1,0 +1,15 @@
+{
+	"full_name": "Patrick McClory", 
+	"email": "patrick@dualspark.com", 
+	"github_username": "patrickmcclory", 
+	"project_name": "Ansible Role Boilerplate", 
+	"repo_name": "ansible-boilerplate", 
+	"role_name": "boilerplate",
+	"project_short_description": "Ansible role boilerplate contains all the boilerplate to create a fully-baked Ansible role.", 
+	"ansible_version": "1.6.6",
+	"role_hosts": "all", 
+	"role_use_sudo": true,
+    "release_date": "2014-07-07", 
+	"year": "2014", 
+	"version" : "0.1.0"
+}
