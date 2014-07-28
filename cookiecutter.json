@@ -7,6 +7,8 @@
 	"role_name": "boilerplate",
 	"project_short_description": "Ansible role boilerplate contains all the boilerplate to create a fully-baked Ansible role.", 
 	"ansible_version": "1.6.6",
+	"vagrant_box_url" : "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box", 
+	"vagrant_box_name": "trusty64",
 	"role_hosts": "all", 
 	"role_use_sudo": true,
     "release_date": "2014-07-07", 
