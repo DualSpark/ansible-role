@@ -1,7 +1,6 @@
 {
 	"full_name": "Patrick McClory", 
 	"email": "patrick@dualspark.com", 
-	"github_username": "patrickmcclory", 
 	"project_name": "Ansible Role Boilerplate", 
 	"repo_name": "ansible-boilerplate", 
 	"role_name": "boilerplate",
@@ -15,3 +14,4 @@
 	"year": "2014", 
 	"version" : "0.1.0"
 }
+
