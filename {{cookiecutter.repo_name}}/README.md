@@ -31,3 +31,5 @@ vagrant plugin install __plugin-name__
 
 * [vagrant-pristine](https://github.com/fgrehm/vagrant-pristine) - makes destroying and re-creating an environment a little easier by using one command (with a switch to force): ```vagrant pristine -f```
 * [landrush](https://github.com/phinze/landrush) - dns manager using dnsmasq or host files to allow for friendlier naming and cross-system access both between multiple guests as well as from the host to the guest. 
+
+#####created with [ansible-role](https://github.com/DualSpark/ansible-role) cookiecutter template
