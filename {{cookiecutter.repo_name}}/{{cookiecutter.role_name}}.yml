@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+# test harness yml file for testing the {{ cookiecutter.role_name }} role
+- hosts: all
   sudo: {{cookiecutter.role_use_sudo}}
   roles: 
     - {{cookiecutter.repo_name}}

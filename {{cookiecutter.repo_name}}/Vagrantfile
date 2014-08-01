@@ -9,15 +9,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = '{{ cookiecutter.vagrant_box_name }}'
   config.vm.box_url = '{{ cookiecutter.vagrant_box_url }}'
 
-  config.vm.provision 'ansible' do |ansible|
-    ansible.vm.hostname = 'ansible-{{ cookiecutter.role_name }}'
+  config.vm.hostname = 'ansible-{{ cookiecutter.role_name }}'
 
-    # host prep - installing prerequisites
-    ansible.vm.provision 'shell', inline: 'sudo apt-get -y update && sudo apt-get -y install python python-dev python-pip libcurl4-openssl-dev --force-yes && sudo pip install --upgrade pycurl'
+  # host prep - installing prerequisites
+  config.vm.provision 'shell', inline: 'sudo apt-get -y update && sudo apt-get -y install python python-dev python-pip libcurl4-openssl-dev --force-yes && sudo pip install --upgrade pycurl'
+
+  config.vm.provision 'ansible' do |ansible|
     
     # Ansible playbook test process
     ansible.sudo = true
-    ansible.verbose = 'v'
+    ansible.extra_vars = { ansible_ssh_user: 'vagrant' }
+    ansible.verbose = 'vv'
     ansible.host_key_checking = false
     ansible.playbook = '{{cookiecutter.role_name}}.yml'
   end
